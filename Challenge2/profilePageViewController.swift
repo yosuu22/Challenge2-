@@ -11,17 +11,20 @@ import UIKit
 class profilePageViewController: UIViewController {
 
     
+
     @IBOutlet weak var uiViewBar1: UIView!
     @IBOutlet weak var uiViewBar3: UIView!
     @IBOutlet weak var uiViewBar2: UIView!
-   
+    @IBOutlet weak var uiViewProgressBar1: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Buat viewCenter untuk masing-masing bar
         let viewCenterBar1 = uiViewBar1.center
         let viewCenterBar2 = uiViewBar2.center
         let viewCenterbar3 = uiViewBar3.center
+        let viewCenterProgresBar1 = uiViewProgressBar1.center
+       
         
         //TrackLayer Swift
         let trackLayer = CAShapeLayer()
@@ -62,9 +65,6 @@ class profilePageViewController: UIViewController {
         trackLayerHTML5.lineCap = CAShapeLayerLineCap.round
         trackLayerHTML5.fillColor = UIColor.clear.cgColor
         view.layer.addSublayer(trackLayerHTML5)
-        
-        
-        
         
         
         // Fill Layer Swift
@@ -135,29 +135,13 @@ class profilePageViewController: UIViewController {
         
         shapeLayerHTML5.add(basicAnimation, forKey: "urToBasic")
         
+        
+      
+        
     }
-    
+//    UIBezierPath(arcCenter: viewCenterBar1, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
    
     
-    
-    
-    
-    
-//
-//    @objc private func handleTap () {
-//    print ("Mantaps")
-//
-//        let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-//        basicAnimation.toValue = 1
-//        basicAnimation.duration = 2
-//        basicAnimation.fillMode = CAMediaTimingFillMode.forwards
-//        basicAnimation.isRemovedOnCompletion = false
-//
-//        shapeLayer.add(basicAnimation, forKey: "urToBasic")
-//
-//    }
-
-   
 
 }
 
