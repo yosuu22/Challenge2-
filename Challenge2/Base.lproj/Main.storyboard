@@ -129,7 +129,7 @@
             <objects>
                 <viewController title="profilePage" id="6Tk-am-zYo" customClass="profilePageViewController" customModule="Challenge2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="60c-v1-Zef">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileIvan" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-Du-l0e">
@@ -204,11 +204,37 @@ and a will to explore more about work and passion.</string>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JF9-sV-Qv8">
+                                <rect key="frame" x="16" y="551" width="106" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconSwift" translatesAutoresizingMaskIntoConstraints="NO" id="G8w-Ps-Efv">
+                                        <rect key="frame" x="38" y="39" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYW-7s-fES">
+                                <rect key="frame" x="154" y="551" width="106" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ToA-A1-5fe">
+                                <rect key="frame" x="288" y="551" width="106" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="m2X-a0-SKb"/>
                     </view>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="1100"/>
+                    <connections>
+                        <outlet property="uiViewBar1" destination="JF9-sV-Qv8" id="bOm-bU-DbA"/>
+                        <outlet property="uiViewBar2" destination="eYW-7s-fES" id="8WK-jn-wVK"/>
+                        <outlet property="uiViewBar3" destination="ToA-A1-5fe" id="XS3-8g-ep5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UT3-RM-1fC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,6 +250,7 @@ and a will to explore more about work and passion.</string>
         <image name="buttonAbout" width="78" height="108"/>
         <image name="buttonExperience" width="110" height="105"/>
         <image name="buttonProfile" width="86" height="105"/>
+        <image name="iconSwift" width="480" height="480"/>
         <image name="profileIvan" width="338" height="343"/>
         <image name="profilePageIvan" width="414" height="896"/>
     </resources>
