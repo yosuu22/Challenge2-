@@ -9,21 +9,23 @@
 import UIKit
 
 class profilePageViewController: UIViewController {
-let shapeLayer = CAShapeLayer()
+
+    
     @IBOutlet weak var uiViewBar1: UIView!
     @IBOutlet weak var uiViewBar3: UIView!
     @IBOutlet weak var uiViewBar2: UIView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       // Gambar Lingkaran
+        // Buat viewCenter untuk masing-masing bar
+        let viewCenterBar1 = uiViewBar1.center
+        let viewCenterBar2 = uiViewBar2.center
+        let viewCenterbar3 = uiViewBar3.center
         
-        
-        let viewCenter = uiViewBar1.center
-        
-        //Create trackLayer
+        //TrackLayer Swift
         let trackLayer = CAShapeLayer()
-        let circularPath = UIBezierPath(arcCenter: viewCenter, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
+        let circularPath = UIBezierPath(arcCenter: viewCenterBar1, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
         
         trackLayer.path = circularPath.cgPath
         
@@ -34,37 +36,129 @@ let shapeLayer = CAShapeLayer()
         view.layer.addSublayer(trackLayer)
         
         
-        let circularPath2 = UIBezierPath(arcCenter: viewCenter, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: true)
         
-        shapeLayer.path = circularPath2.cgPath
+        // Track Layer Python
+        let trackLayerPython = CAShapeLayer()
+        let circularPathPython = UIBezierPath(arcCenter: viewCenterBar2, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
         
-        shapeLayer.strokeColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
-        shapeLayer.lineWidth = 10
-        shapeLayer.lineCap = CAShapeLayerLineCap.round
-        shapeLayer.fillColor = UIColor.clear.cgColor
+        trackLayerPython.path = circularPathPython.cgPath
         
-        shapeLayer.strokeEnd = 0
-//        shapeLayer.fillColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+        trackLayerPython.strokeColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        trackLayerPython.lineWidth = 10
+        trackLayerPython.lineCap = CAShapeLayerLineCap.round
+        trackLayerPython.fillColor = UIColor.clear.cgColor
+        view.layer.addSublayer(trackLayerPython)
         
         
-        view.layer.addSublayer(shapeLayer)
         
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
-    }
-  
-    @objc private func handleTap () {
-    print ("Mantaps")
-    
+        // Track Layer HTML5
+        let trackLayerHTML5 = CAShapeLayer()
+        let circularPathHTML5 = UIBezierPath(arcCenter: viewCenterbar3, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
+        
+        trackLayerHTML5.path = circularPathHTML5.cgPath
+        
+        trackLayerHTML5.strokeColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        trackLayerHTML5.lineWidth = 10
+        trackLayerHTML5.lineCap = CAShapeLayerLineCap.round
+        trackLayerHTML5.fillColor = UIColor.clear.cgColor
+        view.layer.addSublayer(trackLayerHTML5)
+        
+        
+        
+        
+        
+        // Fill Layer Swift
+        let shapeLayerSwift = CAShapeLayer()
+        let circularPath2 = UIBezierPath(arcCenter: viewCenterBar1, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: true)
+        
+        shapeLayerSwift.path = circularPath2.cgPath
+        
+        shapeLayerSwift.strokeColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+        shapeLayerSwift.lineWidth = 10
+        shapeLayerSwift.lineCap = CAShapeLayerLineCap.round
+        shapeLayerSwift.fillColor = UIColor.clear.cgColor
+        
+        shapeLayerSwift.strokeEnd = 0
+        view.layer.addSublayer(shapeLayerSwift)
+        
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.toValue = 1
         basicAnimation.duration = 2
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         
-        shapeLayer.add(basicAnimation, forKey: "urToBasic")
+        shapeLayerSwift.add(basicAnimation, forKey: "urToBasic")
+
+         // Fill Layer Python
+        
+        let shapeLayerPython = CAShapeLayer()
+        let circularPath2Python = UIBezierPath(arcCenter: viewCenterBar2, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: true)
+        
+        shapeLayerPython.path = circularPath2Python.cgPath
+        
+        shapeLayerPython.strokeColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+        shapeLayerPython.lineWidth = 10
+        shapeLayerPython.lineCap = CAShapeLayerLineCap.round
+        shapeLayerPython.fillColor = UIColor.clear.cgColor
+        
+        shapeLayerPython.strokeEnd = 0
+        view.layer.addSublayer(shapeLayerPython)
+        
+        let basicAnimationPython = CABasicAnimation(keyPath: "strokeEnd")
+        basicAnimationPython.toValue = 1
+        basicAnimationPython.duration = 2
+        basicAnimationPython.fillMode = CAMediaTimingFillMode.forwards
+        basicAnimationPython.isRemovedOnCompletion = false
+        
+        shapeLayerPython.add(basicAnimation, forKey: "urToBasic")
+        
+        // Fill Layer for HTML5
+        
+        let shapeLayerHTML5 = CAShapeLayer()
+        let circularPath2HTML5 = UIBezierPath(arcCenter: viewCenterbar3, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: true)
+        
+        shapeLayerHTML5.path = circularPath2HTML5.cgPath
+        
+        shapeLayerHTML5.strokeColor = #colorLiteral(red: 0.9254901961, green: 0.8, blue: 0.4078431373, alpha: 1)
+        shapeLayerHTML5.lineWidth = 10
+        shapeLayerHTML5.lineCap = CAShapeLayerLineCap.round
+        shapeLayerHTML5.fillColor = UIColor.clear.cgColor
+        
+        shapeLayerHTML5.strokeEnd = 0
+        view.layer.addSublayer(shapeLayerHTML5)
+        
+        let basicAnimationHTML5 = CABasicAnimation(keyPath: "strokeEnd")
+        basicAnimationHTML5.toValue = 1
+        basicAnimationHTML5.duration = 2
+        basicAnimationHTML5.fillMode = CAMediaTimingFillMode.forwards
+        basicAnimationHTML5.isRemovedOnCompletion = false
+        
+        shapeLayerHTML5.add(basicAnimation, forKey: "urToBasic")
         
     }
+    
+   
+    
+    
+    
+    
+    
+//
+//    @objc private func handleTap () {
+//    print ("Mantaps")
+//
+//        let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
+//        basicAnimation.toValue = 1
+//        basicAnimation.duration = 2
+//        basicAnimation.fillMode = CAMediaTimingFillMode.forwards
+//        basicAnimation.isRemovedOnCompletion = false
+//
+//        shapeLayer.add(basicAnimation, forKey: "urToBasic")
+//
+//    }
 
    
 
 }
+
+
