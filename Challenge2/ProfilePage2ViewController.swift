@@ -1,30 +1,34 @@
 //
-//  profilePageViewController.swift
+//  ProfilePage2ViewController.swift
 //  Challenge2
 //
-//  Created by Yosua Candra  on 26/04/19.
+//  Created by Yosua Candra  on 29/04/19.
 //  Copyright © 2019 Yosua Candra . All rights reserved.
 //
 
 import UIKit
 
-class profilePageViewController: UIViewController {
-
-    
+class ProfilePage2ViewController: UIViewController {
 
     @IBOutlet weak var uiViewBar1: UIView!
-    @IBOutlet weak var uiViewBar3: UIView!
     @IBOutlet weak var uiViewBar2: UIView!
-    @IBOutlet weak var uiViewProgressBar1: UIView!
-    
+    @IBOutlet weak var uiViewBar3: UIView!
+    @IBOutlet weak var progressView2: UIProgressView!
+    @IBOutlet weak var progressView1: UIProgressView!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        progressView1.transform = progressView1.transform.scaledBy(x: 1, y: 5)
+        
+          progressView2.transform = progressView2.transform.scaledBy(x: 1, y: 5)
+        
+        
         // Buat viewCenter untuk masing-masing bar
-        let viewCenterBar1 = uiViewBar1.center
-        let viewCenterBar2 = uiViewBar2.center
-        let viewCenterbar3 = uiViewBar3.center
-       
-       
+        let viewCenterBar1 = CGPoint(x: 53, y: 55) //uiViewBar1.center
+        let viewCenterBar2 = CGPoint(x: 53, y: 55)
+        let viewCenterbar3 = CGPoint(x: 53, y: 55)
+        
+        
         
         //TrackLayer Swift
         let trackLayer = CAShapeLayer()
@@ -36,7 +40,7 @@ class profilePageViewController: UIViewController {
         trackLayer.lineWidth = 10
         trackLayer.lineCap = CAShapeLayerLineCap.round
         trackLayer.fillColor = UIColor.clear.cgColor
-        view.layer.addSublayer(trackLayer)
+        uiViewBar1.layer.addSublayer(trackLayer)
         
         
         
@@ -50,7 +54,7 @@ class profilePageViewController: UIViewController {
         trackLayerPython.lineWidth = 10
         trackLayerPython.lineCap = CAShapeLayerLineCap.round
         trackLayerPython.fillColor = UIColor.clear.cgColor
-        view.layer.addSublayer(trackLayerPython)
+       uiViewBar2.layer.addSublayer(trackLayerPython)
         
         
         
@@ -64,7 +68,7 @@ class profilePageViewController: UIViewController {
         trackLayerHTML5.lineWidth = 10
         trackLayerHTML5.lineCap = CAShapeLayerLineCap.round
         trackLayerHTML5.fillColor = UIColor.clear.cgColor
-        view.layer.addSublayer(trackLayerHTML5)
+        uiViewBar3.layer.addSublayer(trackLayerHTML5)
         
         
         // Fill Layer Swift
@@ -79,7 +83,7 @@ class profilePageViewController: UIViewController {
         shapeLayerSwift.fillColor = UIColor.clear.cgColor
         
         shapeLayerSwift.strokeEnd = 0
-        view.layer.addSublayer(shapeLayerSwift)
+       uiViewBar1.layer.addSublayer(shapeLayerSwift)
         
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.toValue = 1
@@ -88,8 +92,8 @@ class profilePageViewController: UIViewController {
         basicAnimation.isRemovedOnCompletion = false
         
         shapeLayerSwift.add(basicAnimation, forKey: "urToBasic")
-
-         // Fill Layer Python
+        
+        // Fill Layer Python
         
         let shapeLayerPython = CAShapeLayer()
         let circularPath2Python = UIBezierPath(arcCenter: viewCenterBar2, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: true)
@@ -102,7 +106,7 @@ class profilePageViewController: UIViewController {
         shapeLayerPython.fillColor = UIColor.clear.cgColor
         
         shapeLayerPython.strokeEnd = 0
-        view.layer.addSublayer(shapeLayerPython)
+        uiViewBar2.layer.addSublayer(shapeLayerPython)
         
         let basicAnimationPython = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimationPython.toValue = 1
@@ -125,7 +129,7 @@ class profilePageViewController: UIViewController {
         shapeLayerHTML5.fillColor = UIColor.clear.cgColor
         
         shapeLayerHTML5.strokeEnd = 0
-        view.layer.addSublayer(shapeLayerHTML5)
+        uiViewBar3.layer.addSublayer(shapeLayerHTML5)
         
         let basicAnimationHTML5 = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimationHTML5.toValue = 1
@@ -136,13 +140,15 @@ class profilePageViewController: UIViewController {
         shapeLayerHTML5.add(basicAnimation, forKey: "urToBasic")
         
         
-      
+        
         
     }
-//    UIBezierPath(arcCenter: viewCenterBar1, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
-   
+    //    UIBezierPath(arcCenter: viewCenterBar1, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
+    
+        
+    }
     
 
-}
+
 
 
