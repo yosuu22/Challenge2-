@@ -14,11 +14,14 @@ import YoutubePlayer_in_WKWebView
 class homeViewController: UIViewController {
     
     @IBOutlet weak var youtubePlayer: WKYTPlayerView!
-  
+    
+    @IBOutlet weak var buttonDetail: UIButton!
+    
     var avPlayer: AVPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         youtubePlayer.load(withVideoId: "gu9atqJ29P0")
         
     }
