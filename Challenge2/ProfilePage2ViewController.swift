@@ -13,20 +13,34 @@ class ProfilePage2ViewController: UIViewController {
     @IBOutlet weak var uiViewBar1: UIView!
     @IBOutlet weak var uiViewBar2: UIView!
     @IBOutlet weak var uiViewBar3: UIView!
-    @IBOutlet weak var progressView2: UIProgressView!
     @IBOutlet weak var progressView1: UIProgressView!
+     @IBOutlet weak var progressView2: UIProgressView!
+    @IBOutlet weak var progressView3: UIProgressView!
+     @IBOutlet weak var progressView4: UIProgressView!
+    
+    var minValue = 0
+    let maxValue = 100
+    var downloader = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         progressView1.transform = progressView1.transform.scaledBy(x: 1, y: 5)
+        progressView2.transform = progressView2.transform.scaledBy(x: 1, y: 5)
+        progressView3.transform = progressView3.transform.scaledBy(x: 1, y: 5)
+        progressView4.transform = progressView4.transform.scaledBy(x: 1, y: 5)
         
-          progressView2.transform = progressView2.transform.scaledBy(x: 1, y: 5)
+        // Set up ProgressBar 1
+        progressView1.setProgress(0, animated: false)
         
+         downloader = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: (#selector(ProfilePage2ViewController.proses)), userInfo: nil, repeats: true)
         
         // Buat viewCenter untuk masing-masing bar
         let viewCenterBar1 = CGPoint(x: 53, y: 55) //uiViewBar1.center
         let viewCenterBar2 = CGPoint(x: 53, y: 55)
         let viewCenterbar3 = CGPoint(x: 53, y: 55)
+        
+        
         
         
         
@@ -143,7 +157,16 @@ class ProfilePage2ViewController: UIViewController {
         
         
     }
-    //    UIBezierPath(arcCenter: viewCenterBar1, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
+    @objc func proses() {
+        if minValue != 80 {
+            minValue += 1
+           progressView1.progress = Float(minValue) / Float(maxValue)
+        }
+        else {
+            minValue = 0
+            downloader.invalidate()
+        }
+    }
     
         
     }
