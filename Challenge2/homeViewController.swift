@@ -14,7 +14,7 @@ import YoutubePlayer_in_WKWebView
 class homeViewController: UIViewController {
     
     @IBOutlet weak var youtubePlayer: WKYTPlayerView!
-    
+    @IBOutlet weak var collectionViewImage: UICollectionView!
     @IBOutlet weak var buttonDetail: UIButton!
     
     var avPlayer: AVPlayer!
