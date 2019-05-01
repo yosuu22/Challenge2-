@@ -21,7 +21,6 @@ class homeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         youtubePlayer.load(withVideoId: "gu9atqJ29P0")
         
     }
