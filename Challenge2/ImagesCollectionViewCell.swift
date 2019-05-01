@@ -10,4 +10,11 @@ import UIKit
 
 class ImagesCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var imageView: UIImageView!
+    var image :UIImage! {
+        didSet{
+            imageView.image = image
+        }
+    }
+    
 }
