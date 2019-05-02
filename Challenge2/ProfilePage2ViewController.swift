@@ -110,7 +110,7 @@ class ProfilePage2ViewController: UIViewController {
         // Fill Layer Python
         
         let shapeLayerPython = CAShapeLayer()
-        let circularPath2Python = UIBezierPath(arcCenter: viewCenterBar2, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: true)
+        let circularPath2Python = UIBezierPath(arcCenter: viewCenterBar2, radius: 40, startAngle: -CGFloat.pi / 2 , endAngle: CGFloat.pi - 40, clockwise: true)
         
         shapeLayerPython.path = circularPath2Python.cgPath
         
@@ -124,7 +124,7 @@ class ProfilePage2ViewController: UIViewController {
         
         let basicAnimationPython = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimationPython.toValue = 1
-        basicAnimationPython.duration = 2
+        basicAnimationPython.duration = 0.5
         basicAnimationPython.fillMode = CAMediaTimingFillMode.forwards
         basicAnimationPython.isRemovedOnCompletion = false
         
@@ -133,7 +133,7 @@ class ProfilePage2ViewController: UIViewController {
         // Fill Layer for HTML5
         
         let shapeLayerHTML5 = CAShapeLayer()
-        let circularPath2HTML5 = UIBezierPath(arcCenter: viewCenterbar3, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: true)
+        let circularPath2HTML5 = UIBezierPath(arcCenter: viewCenterbar3, radius: 40, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi - 14, clockwise: true)
         
         shapeLayerHTML5.path = circularPath2HTML5.cgPath
         
@@ -147,7 +147,7 @@ class ProfilePage2ViewController: UIViewController {
         
         let basicAnimationHTML5 = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimationHTML5.toValue = 1
-        basicAnimationHTML5.duration = 2
+        basicAnimationHTML5.duration = 0.5
         basicAnimationHTML5.fillMode = CAMediaTimingFillMode.forwards
         basicAnimationHTML5.isRemovedOnCompletion = false
         
