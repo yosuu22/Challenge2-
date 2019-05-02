@@ -18,6 +18,7 @@
 		D63F72EB2265F3A6009C2064 /* Challenge2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F72EA2265F3A6009C2064 /* Challenge2Tests.swift */; };
 		D63F72F62265F3A6009C2064 /* Challenge2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F72F52265F3A6009C2064 /* Challenge2UITests.swift */; };
 		D690C02A22798A3D00BBAC3C /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690C02922798A3D00BBAC3C /* ImagesCollectionViewCell.swift */; };
+		D69B72BD227A884C0074471E /* secondCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B72BC227A884C0074471E /* secondCellView.swift */; };
 		D6CD07B422768EDF003AF78E /* ProfilePage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CD07B322768EDF003AF78E /* ProfilePage2ViewController.swift */; };
 		D6E3E9C62272B2D400E0DC2B /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3E9C52272B2D400E0DC2B /* homeViewController.swift */; };
 		D6E3E9CA2272B43400E0DC2B /* videoPlayerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3E9C92272B43400E0DC2B /* videoPlayerUIView.swift */; };
@@ -65,6 +66,7 @@
 		D63F72F52265F3A6009C2064 /* Challenge2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge2UITests.swift; sourceTree = "<group>"; };
 		D63F72F72265F3A6009C2064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D690C02922798A3D00BBAC3C /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		D69B72BC227A884C0074471E /* secondCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondCellView.swift; sourceTree = "<group>"; };
 		D6CD07B322768EDF003AF78E /* ProfilePage2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage2ViewController.swift; sourceTree = "<group>"; };
 		D6E3E9C52272B2D400E0DC2B /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		D6E3E9C92272B43400E0DC2B /* videoPlayerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerUIView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				D63F72D52265F3A5009C2064 /* AppDelegate.swift */,
 				D63F72D72265F3A5009C2064 /* ViewController.swift */,
 				D63F72D92265F3A5009C2064 /* Main.storyboard */,
+				D69B72BC227A884C0074471E /* secondCellView.swift */,
 				D690C02922798A3D00BBAC3C /* ImagesCollectionViewCell.swift */,
 				D6CD07B322768EDF003AF78E /* ProfilePage2ViewController.swift */,
 				D6E3E9DA2273509300E0DC2B /* profilePageViewController.swift */,
@@ -416,6 +419,7 @@
 				D63F72D62265F3A5009C2064 /* AppDelegate.swift in Sources */,
 				D6E3E9DB2273509300E0DC2B /* profilePageViewController.swift in Sources */,
 				D690C02A22798A3D00BBAC3C /* ImagesCollectionViewCell.swift in Sources */,
+				D69B72BD227A884C0074471E /* secondCellView.swift in Sources */,
 				D6E3E9CA2272B43400E0DC2B /* videoPlayerUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
