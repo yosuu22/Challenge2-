@@ -25,7 +25,7 @@ class homeViewController: UIViewController,MFMessageComposeViewControllerDelegat
     var currentIndex = 0
     
     
-    let kumpulanGambar = [UIImage(named: "ivan1"), UIImage(named: "ivan2"),UIImage(named: "a1")]
+    let kumpulanGambar = [UIImage(named: "ivan2"), UIImage(named: "ivan1"),UIImage(named: "ivan3"), UIImage(named: "ivan4"), UIImage(named: "ivan5")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
