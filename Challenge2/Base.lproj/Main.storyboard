@@ -243,13 +243,13 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-Qc-tFR">
                                                 <rect key="frame" x="18" y="356" width="367" height="207"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Sometimes people come into your life and you know right away that they were meant to be there, to serve some sort of purpose, teach you a lesson, or to help you figure out who you are or who you want to become. You never know who these people may be (possibly your roommate, neighbor, coworker, longlost friend, lover, or even a complete stranger) but when you lock eyes with them, you know at that very moment that they will affect your life in some profound way.
+                                                <string key="text">Sometimes people come into your life and you know right away that they were meant to be there, to serve some sort of purpose, teach you a lesson, or to help you figure out who you are or who you want to become. You never know who these people may be (possibly your roommate, neighbor, coworker, longlost friend, lover, or even a complete stranger) but when you lock eyes with them, you know at that very moment that they will affect your life in some profound way.
 
 And sometimes things happen to you that may seem horrible, painful, and unfair at first, but in reflection you find that without overcoming those obstacles you would have never realized your potential, strength, willpower, or heart.
 
 Everything happens for a reason. Nothing happens by chance or by means of luck. Illness, injury, love, lost moments of true greatness, and sheer stupidity all occur to test the limits of your soul. Without these small tests, whatever they may be, life would be like a smoothly paved, straight, flat road to nowhere. It would be safe and comfortable, but dull and utterly pointless.
 
-The people you meet who affect your life, and the success and downfalls you experience help to create who you become. Even the bad experiences can be learned from. In fact, they are probably the most poignant and important ones. If someone hurts you, betrays you, or breaks your heart, forgive them, for they have helped you learn about trust and the importance of being cautious when you open your heart. If someone loves you, love them back unconditionally, not only because they love you, but because in a way, they are teaching you to love and how to open your heart and eyes to things.</mutableString>
+The people you meet who affect your life, and the success and downfalls you experience help to create who you become. Even the bad experiences can be learned from. In fact, they are probably the most poignant and important ones. If someone hurts you, betrays you, or breaks your heart, forgive them, for they have helped you learn about trust and the importance of being cautious when you open your heart. If someone loves you, love them back unconditionally, not only because they love you, but because in a way, they are teaching you to love and how to open your heart and eyes to things.</string>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -835,7 +835,7 @@ The people you meet who affect your life, and the success and downfalls you expe
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YB3-Sl-6mu">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1029"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoKodeSoft" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-L7-M3a">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kodeSoftIvan" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-L7-M3a">
                                                 <rect key="frame" x="114" y="21" width="187" height="131"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1612,8 +1612,8 @@ and a will to explore more about work and passion.</string>
         <image name="icons8-work-96" width="96" height="96"/>
         <image name="icons8-world-cup-96" width="96" height="96"/>
         <image name="instagram-1" width="480" height="480"/>
+        <image name="kodeSoftIvan" width="720" height="240"/>
         <image name="lineExperience" width="10" height="224"/>
-        <image name="logoKodeSoft" width="1116" height="638"/>
         <image name="mic" width="96" height="96"/>
         <image name="perusahaanAlat" width="512" height="236"/>
         <image name="profileIvan" width="338" height="343"/>
